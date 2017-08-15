@@ -104,7 +104,7 @@ function industry_apbd_scripts() {
 	wp_enqueue_style( 'industry-apbd-default', get_template_directory_uri(). '/assets/css/default.css', array(), '12082017', 'all' );
 	wp_enqueue_style( 'industry-apbd-style', get_stylesheet_uri() );
     
-
+	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array(), '3.3.7', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
